@@ -19,11 +19,16 @@ public class UiView extends JFrame{
 
     // components
 
+    private JTextField m_reps = new JTextField(5);
+    private JTextField m_weight = new JTextField(20);
+    private JButton    m_submit = new JButton("Submit");
 
 
     //================================ constructor
     UiView(){
 
+        m_logic = new AppModel();
+        
     }
 
 }

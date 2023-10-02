@@ -1,4 +1,4 @@
-read up on mvc build structure
+read up on m-vc build structure
 design patterns
 using the java swing library
 
