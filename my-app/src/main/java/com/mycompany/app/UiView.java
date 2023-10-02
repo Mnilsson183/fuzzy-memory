@@ -21,8 +21,8 @@ public class UiView extends JFrame{
 
     private JTextField m_reps = new JTextField(5);
     private JTextField m_weight = new JTextField(20);
-    private JButton    m_submit = new JButton("Submit");
     private ToggleSwitch m_Switch = new ToggleSwitch();
+    private JButton    m_submit = new JButton("Submit");
 
 
     //================================ constructor
