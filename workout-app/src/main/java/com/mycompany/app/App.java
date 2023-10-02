@@ -1,4 +1,4 @@
-package nilsson;
+package com.mycompany.app;
 
 /**
  * Hello world!
