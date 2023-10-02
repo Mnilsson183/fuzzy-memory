@@ -71,7 +71,8 @@ public class UiViewController extends JFrame{
 
     class clearListener implements ActionListener{
         public void actionPerformed(ActionEvent e){
-            
+            m_repsTextField.setText("");
+            m_weighTextField.setText("");
         }
     }
 
