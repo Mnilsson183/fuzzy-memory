@@ -1,14 +1,13 @@
 package com.mycompany.app;
 
 /**
- * Hello world!
- *
+ * Main file
  */
 import javax.swing.*;
 
 public class App {
     public static void main(String[] args){
-        JFrame presintation = new UiViewController();
-        presintation.setVisible(true);
+        JFrame presentation = new UiViewController();
+        presentation.setVisible(true);
     }
 }
