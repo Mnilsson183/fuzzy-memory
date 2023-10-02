@@ -8,7 +8,7 @@ import javax.swing.*;
 
 public class App {
     public static void main(String[] args){
-        JFrame presintation = new UiView();
+        JFrame presintation = new UiViewController();
         presintation.setVisible(true);
     }
 }
