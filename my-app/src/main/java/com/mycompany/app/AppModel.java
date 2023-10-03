@@ -9,7 +9,16 @@ import java.util.Scanner;
 
 public class AppModel{
 
+    // constants
+    
     AppModel(){
+
+    }
+
+    public void submitExercise(String exerciseName, int[] exercise){
+
+    }
+    public void submitExercise(String exercise){
 
     }
 
@@ -50,10 +59,20 @@ public class AppModel{
     }
 }
 
+/*
+entries{
+    entryNumber: {
+        day:
+        month:
+        year:
+        workout{
+            exercise: 
+            exercise:
+            exercise:
 
-entryNumber: {
-    day:
-    month:
-    year:
-    workout
+        }
+    }
 }
+
+
+*/
