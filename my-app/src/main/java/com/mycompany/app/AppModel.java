@@ -10,23 +10,20 @@ import java.util.Scanner;
 public class AppModel{
 
     // constants
+
+    // need a struct to store the day data
     
     AppModel(){
 
     }
 
     public void submitExercise(String exerciseName, int[] exercise){
+        int EXERCISESIZE = 5;
+        System.out.println(exerciseName);
+        for (int i = 0; i < EXERCISESIZE; i++){
+            System.out.println(exercise[i]);
+        }
 
-    }
-    public void submitExercise(String exercise){
-
-    }
-
-    public void submitReps(String reps){
-
-    }
-
-    public void SubmitWeight(String weight){
 
     }
 
@@ -60,6 +57,7 @@ public class AppModel{
 }
 
 /*
+
 entries{
     entryNumber: {
         day:

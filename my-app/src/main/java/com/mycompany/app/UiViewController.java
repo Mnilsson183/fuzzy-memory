@@ -72,7 +72,7 @@ public class UiViewController extends JFrame{
             String userInputStringWeight = "";
             String userInputStringExercise = "";
 
-            int[] exercise = new int[6];
+            int[] exercise = new int[5];
             try {
 
                 // weight and reps
@@ -86,8 +86,8 @@ public class UiViewController extends JFrame{
                 exercise[1] = Integer.parseInt(m_dateDayField.getText());
                 exercise[2] = Integer.parseInt(m_dateYearField.getText());
 
-                exercise[4] = Integer.parseInt(userInputStringReps);
-                exercise[5] = Integer.parseInt(userInputStringWeight);
+                exercise[3] = Integer.parseInt(userInputStringReps);
+                exercise[4] = Integer.parseInt(userInputStringWeight);
 
                 m_logic.submitExercise(userInputStringExercise, exercise);
 
