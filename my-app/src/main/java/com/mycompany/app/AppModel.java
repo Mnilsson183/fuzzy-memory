@@ -28,7 +28,7 @@ public class AppModel{
     public void fromJSON(String json){
 
     }
-    
+
     public String readSaveData(String filePath){
         File file = new File(filePath);
         String json = "";
@@ -46,5 +46,14 @@ public class AppModel{
 
     public void initSaveData(){
         String json = readSaveData("data/workout.txt");
+        fromJSON(json);
     }
+}
+
+
+entryNumber: {
+    day:
+    month:
+    year:
+    workout
 }
