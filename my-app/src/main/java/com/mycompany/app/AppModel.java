@@ -59,7 +59,7 @@ public class AppModel{
 /*
 
 entries{
-    entryNumber: {
+    Day: {
         day:
         month:
         year:
