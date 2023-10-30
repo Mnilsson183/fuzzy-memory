@@ -3,56 +3,22 @@ package com.mycompany.app;
 /*
  * 
  */
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
 
 public class AppModel{
-
+    int EXERCISE_SIZE = 5;
     // constants
 
     // need a struct to store the day data
     
     AppModel(){
-
+        Json.toJson();
     }
 
-    public void submitExercise(String exerciseName, int[] exercise){
-        int EXERCISESIZE = 5;
+    public void submitExercise(String exerciseName, int[] exercise, Day day){
         System.out.println(exerciseName);
-        for (int i = 0; i < EXERCISESIZE; i++){
+        for (int i = 0; i < EXERCISE_SIZE; i++){
             System.out.println(exercise[i]);
         }
-
-
-    }
-
-    public void toJSON(){
-
-    }
-
-    public void fromJSON(String json){
-
-    }
-
-    public String readSaveData(String filePath){
-        File file = new File(filePath);
-        String json = "";
-        Scanner inputFile = null;
-        try {
-            inputFile = new Scanner(file);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        while(inputFile.hasNext()){
-            json = json + inputFile.nextLine();
-        }
-        return json;
-    }
-
-    public void initSaveData(){
-        String json = readSaveData("data/workout.txt");
-        fromJSON(json);
     }
 }
 

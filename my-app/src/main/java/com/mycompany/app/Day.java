@@ -1,19 +1,18 @@
 package com.mycompany.app;
 
-public class Day {
-    int month;
-    int day;
-    int year;
-    Day(int month, int day, int year){
-        this.month = month;
-        this.day = day;
-        this.year = year;
-    }
-    class Workouts{
-        
-    }
+import java.util.Vector;
 
-    class Nutrition{
+public class Day {
+    public static Vector<Day> days = new Vector<Day>();
+
+        int month;
+        int day;
+        int year;
+        class Workouts{
+            
+        }
+
+        class Nutrition{
 
     }
 }
