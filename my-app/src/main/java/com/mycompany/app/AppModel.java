@@ -14,11 +14,8 @@ public class AppModel{
         
     }
 
-    public void submitExercise(String exerciseName, int[] exercise){
-        System.out.println(exerciseName);
-        for (int i = 0; i < EXERCISE_SIZE; i++){
-            System.out.println(exercise[i]);
-        }
+    public void submitExercise(String exerciseName, int exerciseReps, int exerciseWeight){
+        Days.days.get(0).workouts.get(0).addExercise(exerciseName, exerciseReps, exerciseWeight);
     }
 
     public void save(){

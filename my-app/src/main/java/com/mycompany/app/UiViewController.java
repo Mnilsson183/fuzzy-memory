@@ -23,11 +23,6 @@ public class UiViewController extends JFrame{
     private JTextField m_exerciseNameTextField = new JTextField("Exercise", 20);
     private ToggleSwitch m_ToggleSwitch = new ToggleSwitch();
 
-    //Date section
-    private JTextField m_dateMonthField = new JTextField("Month", 5);
-    private JTextField m_dateDayField = new JTextField("Day", 5);
-    private JTextField m_dateYearField = new JTextField("Year", 5);
-
 
     // submit and reset buttons
     private JButton    m_submitButton = new JButton("Submit");
@@ -86,6 +81,7 @@ public class UiViewController extends JFrame{
 
             } catch (Exception b) {
                 JOptionPane.showMessageDialog(UiViewController.this, "Bad input: " + userInputStringReps + " + " + userInputStringWeight);
+                b.printStackTrace();
             }
         }
     }

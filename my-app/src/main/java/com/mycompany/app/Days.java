@@ -3,12 +3,15 @@ package com.mycompany.app;
 import java.util.Calendar;
 import java.util.Vector;
 
-public class Day {
+public class Days{
+
+    public static Vector<Day> days = new Vector<Day>();
+
+    public class Day {
 
     Day(){
 
     }
-    public static Vector<Day> days = new Vector<Day>();
 
     Calendar cal = Calendar.getInstance();
 
@@ -37,7 +40,7 @@ public class Day {
             }
         }
 
-        public void addWorkout(String exerciseName, int exerciseReps, int exerciseWeight){
+        public void addExercise(String exerciseName, int exerciseReps, int exerciseWeight){
             Exercise tmpExercise = new Exercise(exerciseName, exerciseReps, exerciseWeight);
             workouts.add(tmpExercise);
         }
@@ -47,4 +50,6 @@ public class Day {
     class Nutrition{
 
     }
+}
+   
 }
