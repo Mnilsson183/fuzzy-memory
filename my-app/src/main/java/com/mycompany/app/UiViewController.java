@@ -47,10 +47,6 @@ public class UiViewController extends JFrame{
         content.add(m_repsTextField);
         content.add(m_weighTextField);
         content.add(m_ToggleSwitch);
-        content.add(new JLabel("Date"));
-        content.add(m_dateMonthField);
-        content.add(m_dateDayField);
-        content.add(m_dateYearField);
         content.add(m_submitButton);
         content.add(m_clearButton);
         content.add(m_saveButton);
@@ -75,7 +71,6 @@ public class UiViewController extends JFrame{
             String userInputStringWeight = "";
             String userInputStringExercise = "";
 
-            int[] exercise = new int[5];
             try {
 
                 // weight and reps
@@ -84,15 +79,10 @@ public class UiViewController extends JFrame{
                 userInputStringWeight = m_weighTextField.getText();
 
 
-                // date
-                exercise[0] = Integer.parseInt(m_dateMonthField.getText());
-                exercise[1] = Integer.parseInt(m_dateDayField.getText());
-                exercise[2] = Integer.parseInt(m_dateYearField.getText());
+                int exerciseReps = Integer.parseInt(userInputStringReps);
+                int exerciseWeight = Integer.parseInt(userInputStringWeight);
 
-                exercise[3] = Integer.parseInt(userInputStringReps);
-                exercise[4] = Integer.parseInt(userInputStringWeight);
-
-                m_logic.submitExercise(userInputStringExercise, exercise);
+                m_logic.submitExercise(userInputStringExercise, exerciseReps, exerciseWeight);
 
             } catch (Exception b) {
                 JOptionPane.showMessageDialog(UiViewController.this, "Bad input: " + userInputStringReps + " + " + userInputStringWeight);
@@ -104,9 +94,6 @@ public class UiViewController extends JFrame{
         public void actionPerformed(ActionEvent e){
             m_repsTextField.setText("");
             m_weighTextField.setText("");
-            m_dateMonthField.setText("");
-            m_dateDayField.setText("");
-            m_dateYearField.setText("");
         }
     }
 
