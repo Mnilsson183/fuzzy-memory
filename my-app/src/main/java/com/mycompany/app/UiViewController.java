@@ -31,7 +31,8 @@ public class UiViewController extends JFrame{
 
     // submit and reset buttons
     private JButton    m_submitButton = new JButton("Submit");
-    private JButton    m_clearButton = new JButton("Reset"); 
+    private JButton    m_clearButton = new JButton("Reset");
+    private JButton    m_saveButton = new JButton("Save");
 
 
     //================================ constructor
@@ -52,10 +53,12 @@ public class UiViewController extends JFrame{
         content.add(m_dateYearField);
         content.add(m_submitButton);
         content.add(m_clearButton);
+        content.add(m_saveButton);
 
         // add button listeners
         m_submitButton.addActionListener(new submitListener());
         m_clearButton.addActionListener(new clearListener());
+        m_saveButton.addActionListener(new saveListener());
 
         this.setContentPane(content);
         this.pack();
@@ -104,6 +107,12 @@ public class UiViewController extends JFrame{
             m_dateMonthField.setText("");
             m_dateDayField.setText("");
             m_dateYearField.setText("");
+        }
+    }
+
+    class saveListener implements ActionListener{
+        public void actionPerformed(ActionEvent e){
+            m_logic.save();
         }
     }
 }

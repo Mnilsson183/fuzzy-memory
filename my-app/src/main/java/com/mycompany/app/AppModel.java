@@ -11,14 +11,18 @@ public class AppModel{
     // need a struct to store the day data
     
     AppModel(){
-        Json.toJson();
+        
     }
 
-    public void submitExercise(String exerciseName, int[] exercise, Day day){
+    public void submitExercise(String exerciseName, int[] exercise){
         System.out.println(exerciseName);
         for (int i = 0; i < EXERCISE_SIZE; i++){
             System.out.println(exercise[i]);
         }
+    }
+
+    public void save(){
+        Json.SaveToJson();
     }
 }
 
