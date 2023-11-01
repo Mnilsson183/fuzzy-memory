@@ -1,6 +1,5 @@
 package com.mycompany.app;
 
-
 public class AppModel{
 
     // need a struct to store the day data
