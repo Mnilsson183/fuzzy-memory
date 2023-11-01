@@ -36,6 +36,7 @@ public class UiViewController extends JFrame{
         m_logic = new AppModel();
 
         JPanel content = new JPanel();
+        content.setPreferredSize(new Dimension(600, 500));
         content.setLayout(new FlowLayout());
         content.add(new JLabel("Workout information"));
         content.add(m_exerciseNameTextField);

@@ -13,7 +13,7 @@ class Json {
         ObjectMapper mapper = new ObjectMapper();
         String jsonString = "";
         try{
-            for(int i = 0; i < Days.days.size(); i++){
+            for(int i = 0; i < days.days.size(); i++){
                 mapper.writeValue((new File("workout.txt")), Days.days.get(i));
             }
         } catch(IOException e){
@@ -31,7 +31,7 @@ class Json {
         }
     }
 
-    public static void fromJson(){
+    public static void loadFromJson(){
 
     }
 }
