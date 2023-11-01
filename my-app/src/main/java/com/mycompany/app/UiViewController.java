@@ -82,7 +82,7 @@ public class UiViewController extends JFrame{
 
             } catch (Exception b) {
                 JOptionPane.showMessageDialog(UiViewController.this, "Bad input: " + userInputStringReps + " + " + userInputStringWeight);
-                b.printStackTrace();
+                b.printStackTrace(); 
             }
         }
     }
