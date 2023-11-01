@@ -2,7 +2,7 @@ package com.mycompany.app;
 
 import java.util.Vector;
 
-class Workout{
+public class Workout{
 
     public Vector<Exercise> workout = new Vector<Exercise>();
 

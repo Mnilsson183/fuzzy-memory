@@ -7,14 +7,12 @@ import com.fasterxml.jackson.core.exc.StreamWriteException;
 
 class Json {
     public static void SaveToJson(){
-        //  te
-        //
 
         ObjectMapper mapper = new ObjectMapper();
         String jsonString = "";
         try{
-            for(int i = 0; i < days.days.size(); i++){
-                mapper.writeValue((new File("workout.txt")), Days.days.get(i));
+            for(int i = 0; i < Days.getDays().size(); i++){
+                mapper.writeValue((new File("workout.txt")), Days.getDays().get(i));
             }
         } catch(IOException e){
             System.err.println("Cannot save");

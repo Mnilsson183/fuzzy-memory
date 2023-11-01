@@ -10,7 +10,9 @@ public class AppModel{
     }
 
     public void submitExercise(String exerciseName, int exerciseReps, int exerciseWeight){
-        days.days.get(0).workouts.get(0).addExercise(exerciseName, exerciseReps, exerciseWeight);
+        Days.setNewDay(exerciseWeight, exerciseReps, exerciseWeight);
+        Days.getDayByIndex(Days.daysSize());
+        
     }
 
     public void save(){
